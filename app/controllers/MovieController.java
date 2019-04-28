@@ -8,5 +8,11 @@ public class MovieController extends Controller {
 		String titulo = "Testing";
 		return ok(views.html.movie.index.render(titulo));
 	}
+	
+	public Result getMovie(Long id) {
+		String titulo = "Movie con id : " + id;
+		return ok(views.html.movie.getMovie.render(titulo));
+	}
 
 }
+
