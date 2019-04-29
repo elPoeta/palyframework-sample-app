@@ -13,8 +13,8 @@ public class MovieController extends Controller {
 	}
 	
 	public Result getMovie(Long id) {
-		String titulo = "Movie con id : " + id;
-		return ok(views.html.movie.getMovie.render(titulo));
+		Movie movie = Movie.getMovie(id);
+		return ok(views.html.movie.getMovie.render(movie));
 	}
 	
 	public Result create() {

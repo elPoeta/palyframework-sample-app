@@ -1,10 +1,13 @@
 @* index Template File *@
-@(titulo: String)
+@(movie: Movie)
 <html>
 <head>
 <title>Get Movies</title>
 </head>
 <body>
-<h1>@titulo</h1>
+<h2>@movie.title</h2>
+<p>@movie.year</p>
+<h4>@movie.director</h4>
+<a href="#">Edit</a>
 </body>
 </html

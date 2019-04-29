@@ -30,5 +30,13 @@ public class Movie {
 	public static Set<Movie> getAll(){
 		return movies;
 	}
-
+	
+	public static Movie getMovie(Long id) {
+		for (Movie movie : movies) {
+			if(id.equals(movie.id)) {
+				return movie;
+			}
+		}
+		return null;
+	}
 }
